@@ -1,0 +1,28 @@
+h1
+{
+    font-family: 'Russo One', sans-serif;
+    margin-top: 10%;
+    font-size: 6rem;
+}
+.start
+{
+    font-family: 'Russo One', sans-serif;
+    font-size: 2rem;
+    width: 30%;
+    border-radius: 15px;
+    margin-top: 1%;
+}
+.lap
+{
+    font-family: 'Russo One', sans-serif;
+    font-size: 2rem ;
+    width: 30%;
+    border-radius: 15px;
+    margin-top: 1%;
+}
+.cover1
+{
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+}
