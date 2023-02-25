@@ -1,28 +1,75 @@
+body{
+font-family: 'Russo One', sans-serif;
+color: aliceblue;
+background-image: url('Untitled-1.jpg');
+}
 h1
-{
-    font-family: 'Russo One', sans-serif;
+{ 
     margin-top: 10%;
     font-size: 6rem;
 }
 .start
 {
-    font-family: 'Russo One', sans-serif;
-    font-size: 2rem;
+    font-size: 2.5vw;
     width: 30%;
     border-radius: 15px;
     margin-top: 1%;
+    box-shadow: 3px 3px 6px black;
 }
 .lap
 {
-    font-family: 'Russo One', sans-serif;
-    font-size: 2rem ;
+    
+    font-size: 2.5vw ;
     width: 30%;
     border-radius: 15px;
     margin-top: 1%;
+    box-shadow: 3px 3px 6px black;
+    backdrop-filter: blur(13px);
 }
 .cover1
 {
     position: absolute;
-    z-index: -1;
     width: 100%;
+    height: 100%;
+     z-index: -1;
+     top: 0;
+     min-height: 780px;
+}
+.verti
+{
+    display: none;
+}
+.clock
+{
+    margin-top: 10%;
+    margin-left: 4%;
+    font-size: 6vw;
+}
+@media screen and (max-width:600px)
+{
+    .clock{
+        margin-top: 40%;
+        margin-left: 4%;
+    font-size: 8vw;
+    }
+    
+    .cover1
+{
+    display: none;
+}
+.verti
+{
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+     z-index: -1;
+     top: 0;
+      min-height: 780px;
+}
+}
+.laps
+{
+    font-size: 3vw;
+    -webkit-text-stroke: 2px black;
 }
