@@ -2,7 +2,7 @@ let timer=document.querySelector(".clock");
 let timeNow;
 let t=0;
 let lapArray=[];
-let laps=document.querySelector(".laps")
+let laps=document.querySelector(".alllaps")
 
 document.querySelector("#startb").addEventListener("click",function()
 {
@@ -16,11 +16,12 @@ document.querySelector("#stopb").addEventListener("click",function()
 })
 document.querySelector("#reset").addEventListener("click",function()
 {
+    lapArray=[];
     clearInterval(timeAt)
     timer.textContent="00:00:00:00";
     laps.innerHTML="";
     t=0;
-    lapArray=[];
+
 });
 function timeUpdate() {
     t = Date.now() - timeNow;
